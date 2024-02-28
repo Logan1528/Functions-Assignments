@@ -1,0 +1,25 @@
+Q4.Write a JavaScript function called calculateTax that takes an income as an argument and returns the
+amount of tax to be paid. Use a closure to handle different tax rates based on income ranges. Test the
+function with various incomes.
+
+function calculateTax(income) {
+  let tax;
+  if (income >= 250000 && income <= 500000) {
+    tax = (income / 100) * 5;
+  } else if (income > 500000 && income <= 1000000) {
+    tax = (income / 100) * 20;
+  }else if (income > 1000000){
+      tax = (income / 100) * 30;
+  } else {
+    console.log("Income does not fall into any specified range.");
+    return;
+  }
+  console.log("Tax:", tax);
+}
+
+calculateTax(1100000);
+
+Output:
+
+Tax: 330000
+

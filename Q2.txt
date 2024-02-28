@@ -1,0 +1,16 @@
+Q2. Create a JavaScript function called generateGreeting that takes a name as an argument and returns a
+personalized greeting message. Use this function to greet three different people.
+
+function generateGreeting (name){
+    console.log(`Hi ${name}, Have a nice day`);
+}
+
+generateGreeting("vasu");
+generateGreeting("Priya");
+generateGreeting("Jhon");
+
+Output:
+
+Hi vasu, Have a nice day
+Hi Priya, Have a nice day
+Hi Jhon, Have a nice day
